@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  starts: 2014-12-10
+  description: MyText
+  image_path: MyString
+
+two:
+  starts: 2014-12-10
+  description: MyText
+  image_path: MyString

@@ -1,0 +1,91 @@
+.calendar-container {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+
+.flash{
+  width: 100%;
+  background-color: #ccc;
+  color: #333;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.countdown{
+  width: 100%;
+  background-color: #AA2E55;
+  color: #F3FFE2;
+  border-radius: 15px;
+  padding: 7px;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+
+.cell.closed:nth-of-type(even) {
+  background-color: #225378
+}
+.cell.closed:nth-of-type(odd) {
+  background-color: #1695A3;
+}
+
+.opened {
+  background: #EA2E49;
+}
+
+
+.cell {
+  border-radius: 10px;
+  float:left;
+  width: 150px;
+  height: 150px;
+  background-size: 150px 150px;
+  border:0px solid #ccc;
+  margin: 5px;
+  font-size: .7em;
+  position: relative;
+}
+
+.cell, a {
+  color: #F3FFE2;
+
+}
+
+.day {
+  padding: 5px;
+}
+
+
+.closed > .day > .content > a{
+  text-decoration: none;
+  font-family: 'Muli', sans-serif;
+  text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+}
+
+.closed > .day > .content {
+  //border: 1px solid #fff;
+  padding-top: 17px;
+  text-align: center;
+  font-size: 3em;
+}
+
+.small-date {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+
+.header {
+  background: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.opened > .day > .content{
+  padding: 5px;
+  background-color: #EA2E49;
+  border-radius: 10px;
+}
