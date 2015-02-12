@@ -1,0 +1,7 @@
+span.cell class=(day.opened? ? 'opened' : 'closed') style=("background-image: url('#{day.image_path}');" if day.image_path)
+  .day
+    - if day.opened?
+        .content= day.description.html_safe
+        .small-date= day.starts.strftime('%b %d')
+    - else
+        .content= link_to "#{day.starts.strftime('%b*%d').gsub("*","<br />")}".html_safe, open_path(day)

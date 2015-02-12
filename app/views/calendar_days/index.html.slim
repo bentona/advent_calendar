@@ -1,0 +1,17 @@
+.calendar-container
+  -if flash[:notice]
+    .flash
+      = flash[:notice]
+  -if @countdown
+    .countdown
+      = render partial: "countdown", locals: {countdown: @countdown}
+  .calendar
+    - @calendar_days.each do |day|
+      = render partial: "day", locals: {day: day}
+
+div(style="clear: both;")
+br
+br
+br
+
+  =link_to "Reset", reset_path
